@@ -1,0 +1,42 @@
+div{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: green;
+    border-left-color: blueviolet;
+    border-right: 10px red dashed;
+
+    padding-top: 10px;
+
+    margin: 10px 20px 30px;
+}
+
+h1{
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: green; */
+    border: 2px dashed green; /*border shorthand*/
+}
+
+button{
+    margin-top: 30px;
+    border-radius: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px; */
+    
+    padding: 10px 25px;
+}
+
+/* 
+padding shorthand:
+    padding:50px (all 4 sides)
+    padding:50px 100px (top + bottom) & (left + right)
+    padding:1px 2px 3px  (top + left & right + bottom)
+    padding:50px 100px 50px 100px (clockwise: top right bottom left)
+    
+*/

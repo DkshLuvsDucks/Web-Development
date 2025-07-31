@@ -1,0 +1,8 @@
+div{
+    height: 400px;
+    width: 400px;
+    background-color: #b4dd1e;
+    margin: 20px auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgLIvOZBdzg3NXjrBWJPfib2OdvKzhAcojA&s");
+    background-size: cover; /*contain/cover/auto*/
+}

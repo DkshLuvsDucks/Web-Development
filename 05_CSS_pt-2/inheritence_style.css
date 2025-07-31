@@ -1,0 +1,22 @@
+/* all elements under div will inherit this property if they
+do not already have an assigned color */
+div{
+    background-color: lightblue;
+}
+
+form{
+    background-color: lightslategrey;
+}
+
+/* input boxes and buttons do not inherit properties by default
+to make them inherit properties u have to */
+
+input{
+    background-color: inherit;
+}
+
+button{
+    background-color: inherit;
+}
+
+/* All properties cannot be inherited... eg: width, height, border etc */

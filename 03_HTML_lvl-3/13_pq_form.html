@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assigment PQ-2</title>
+</head>
+<body>
+    <form action="/action">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" required>
+        </div>
+        <div>
+            <label for="sex">Sex: </label>
+            <input type="radio" id="male" name="sex" value="m" required>Male
+            <input type="radio" id="female" name="sex" value="f">Female
+        </div>
+        <div>
+            <label for="country">Country: </label>
+            <select id="country" name="country" required>
+                <option value="none">Select an option</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="U.S.A">U.S.A</option>
+                <option value="Japan">Japan</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+            </select>
+        </div>
+        <div>
+            <label for="msg">Message:</label><br>
+            <textarea id="msg" name="msg" cols="40" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="sub" name="sub" checked>
+            <label for="sub">Subscribe?</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

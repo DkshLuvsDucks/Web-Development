@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <!-- group radio buttons by using the same name (fruit here) -->
+            <!-- value attribute is important for passing info (fruit=apple) will be passed here -->
+            <input 
+                type="radio"
+                name="fruit"
+                id="apple"
+                value="apple"
+            >
+            <label for="apple">Apple</label>
+            <input 
+                type="radio"
+                name="fruit"
+                id="banana"
+                value="banana"
+            >
+            <label for="banana">Banana</label>
+            <input 
+                type="radio"
+                name="fruit"
+                id="mango"
+                value="mango"
+            >
+            <label for="mango">Mango</label>
+        </div>
+        <button>Submit</button>
+        <hr>
+        Choose your subjects:
+        <div>
+            <input
+                type="checkbox"
+                name="subject"
+                id="maths"
+                value="maths"
+            />
+            <label for="maths">maths</label>
+            <input
+                type="checkbox"
+                name="subject"
+                id="english"
+                value="english"
+            />
+            <label for="english">english</label>
+                        <input
+                type="checkbox"
+                name="subject"
+                id="science"
+                value="science"
+            />
+            <label for="science">science</label>
+                        <input
+                type="checkbox"
+                name="subject"
+                id="computer"
+                value="computer"
+            />
+            <label for="computer">computer</label>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

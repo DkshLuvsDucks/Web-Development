@@ -1,0 +1,24 @@
+/* here we reversed the display types */
+h1{
+    display: inline ;
+}
+
+span{
+    display: block;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 20px;
+}
+
+div{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    display: inline-block; /*inline block doesnt suppresses properties like width height etc, which inline property might suppress*/
+}
+
+#third{
+    display: none;
+}

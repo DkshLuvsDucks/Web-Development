@@ -1,0 +1,32 @@
+#circle{
+    height: 400px;
+    width: 400px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.eye{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+
+#eye_2{
+    left: 250px;
+}
+
+#mouth{
+    height: 80px;
+    width: 200px;
+    background-color: darkred;
+    border-top: 20px solid white;
+    border-radius: 10px 10px 100% 100%;
+    position: absolute;
+    top: 230px;
+    left: 100px;
+}

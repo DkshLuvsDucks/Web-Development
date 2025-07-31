@@ -1,0 +1,33 @@
+#o_box{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+}
+
+#i_box{
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    margin-left: 10%;
+}
+
+#outer{
+    
+    background-color: yellowgreen;
+    font-size: 20px;
+}
+
+#inner{
+    font-size: 3em;
+    
+    background-color: pink;
+}
+
+.sb{
+    font-size: 2em;
+}
+
+.test{
+    font-size: 2rem;
+}
+

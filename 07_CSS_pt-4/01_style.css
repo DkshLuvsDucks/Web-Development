@@ -1,0 +1,19 @@
+#test_1{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(138, 206, 0, 0.7)
+}
+
+#test_2{
+    height: 100px;
+    width: 100px;
+    background-color: #b4dd1e55
+}
+
+h3{
+    opacity: .69;
+}
+
+button{
+    opacity: 0.5;
+}

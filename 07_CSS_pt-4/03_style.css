@@ -1,0 +1,35 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: #b4dd1e;
+    margin: 20px auto;
+    font-family: Arial condensed;
+    text-align: center;
+}
+
+div:nth-of-type(2n){
+    background-color: black;
+    color: white;
+}
+
+#one{
+    transform: rotate(15deg);
+}
+
+#two{
+    transform: scale(0.5, 2);
+}
+
+
+#three{
+    transform: translate(100px,100px);
+}
+
+
+#four{
+    transform: skew(-30deg);
+}
+
+#five{
+    transform: translateX(-150px) rotate(-45deg) ;
+}

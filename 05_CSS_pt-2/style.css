@@ -1,0 +1,123 @@
+/* Universal Selector */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Element Selector */
+h1, h3{
+    color: #b92b27;
+}
+
+/* Id selector */
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+#login{
+    background-color: white;
+}
+
+/* Class selector */
+.upvote{
+    background-color: green;
+    color: white;
+}
+
+/* Descendent Selector */
+
+p a{
+    color: purple;
+}
+
+nav ul li a{  /*we can do this by just writing "nav a" as well */
+    color: hotpink;
+}
+
+
+/* Sibling Combinator */
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button {
+    background-color: lightblue;
+}
+
+/* Child Combinator */
+div > input { /*this needs to be a direct descendent/child otherwise wont work*/
+    background-color: lightgoldenrodyellow;
+}
+
+/* Attribute selector */
+input[type="text"]{
+    color: green;
+}
+
+input[type="password"]{
+    color: red;
+}
+
+/* Practice Question */
+div[id="myId"] p{ /*alt way: "#myId p"*/
+    color: green;
+}
+
+/* Pseudo Class */
+button:hover{
+    background-color: black;
+    color: ghostwhite;
+}
+
+h3:hover{
+    text-decoration: none;
+}
+
+button:active{
+    background-color: hotpink;
+}
+
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n){
+    background-color: lightgoldenrodyellow;
+}
+
+/* Pseudo Element */
+h1::first-letter{
+    font-size: 56px;
+    color: green;
+}
+
+p::first-line{
+    color: cadetblue;
+}
+
+p::selection{
+    background-color: #b92b27;
+    color: white;
+}
+
+/* "!important property gets a high priorty in css" */
+h3{
+    background-color: goldenrod !important;
+}
+
+/* CASCADING PROPERTIES (FINAL CSS PROPERTY IS CONSIDERED) */
+h3{
+    background-color: aquamarine;
+}
+/* 
+inline css > Id > class > element
+more selectors > less selectors : more the selectors higher is the priority of css code
+if specificity is same then cascading rules apply
+*/
+

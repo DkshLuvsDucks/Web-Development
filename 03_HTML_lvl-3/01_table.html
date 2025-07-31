@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+</head>
+<body>
+    <!--
+    <tr> : used to display a table row
+    <td> : used to display a table data
+    <th> : used to display a table header
+    -->
+    <table border="black">
+        <caption>Food Menu</caption>
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th rowspan="2">Item</th>
+                <th colspan="2">Price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <!-- Table Body-->
+        <tbody>
+            <tr>
+                <td>Veg Roll</td>
+                <td>&#8377;30</td>
+                <td>&dollar;0.36</td>
+            </tr>
+            <tr>
+                <td>Egg Roll</td>
+                <td>&#8377;45</td>
+                <td>&dollar;0.54</td>
+            </tr>
+            <tr>
+                <td>Chowmein</td>
+                <td>&#8377;40</td>
+                <td>&dollar;0.48</td>
+            </tr>
+        </tbody>
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td colspan="3"><i>prices are inclusive of all taxes</i></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

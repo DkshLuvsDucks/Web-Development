@@ -1,0 +1,15 @@
+.hover_circle{
+    height: 100px;
+    width: 100px;
+    background-color: #b4dd1e;
+    margin: 0 auto;
+    /* transition-duration: .5s;
+    transition-delay: .2s; */
+    transition: margin-top 2s ease-in-out 0.2s;
+}
+
+.hover_circle:hover{
+    margin-top: 400px;
+    border-radius: 50%;
+    background-color: black;
+}

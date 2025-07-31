@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="size_style.css">
+</head>
+<body>
+    <div id="o_box">
+        <div id="i_box"></div>
+    </div>
+
+    <div id="outer">
+        This is Outer Box
+        <div id="inner">
+            This is Inner Box
+        </div>
+    </div>
+    <h1>
+        Snowball Effect in EM units
+    </h1>
+    <div class="sb"> Div 1
+        <div class="sb"> Div 2
+            <div class="sb"> Div 3
+                <div class="sb">Div 4</div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Use REM unit to fix this issue</h1>
+    
+    <div class="test"> Div 1
+        <div class="test"> Div 2
+            <div class="test"> Div 3
+                <div class="test">Div 4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

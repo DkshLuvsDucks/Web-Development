@@ -1,0 +1,57 @@
+/* Give the h1 header a unique id - “mainTopic” & set its color to blue using the id selector. */
+#mainTopic{
+    color: blue;
+}
+
+/* use universal selector and align all text to centre */
+*{
+    text-align: center;
+}
+
+/* change font style of all heading to georgia */
+h1, h3, h5{
+    font-family: georgia;
+}
+
+/* Set the color of all the paragraphs to white & background color to cornflowerblue.(Without using the element selector - ‘p’) */
+.content{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+/* select all buttons insidde div and change bg to purple and text color to azure */
+div button{
+    color: azure;
+    background-color: purple;
+}
+
+/* change button hover state colors: bg = yellow, text = blue */
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+
+/* change color of every odd para to yellow */
+p:nth-of-type(2n+1){
+    background-color: darkgoldenrod;
+}
+
+/* Change first letter of h1 to red color */
+h1::first-letter{
+    color: red;
+}
+
+/* Set the text color of the checkbox label to dark green when the checkbox is ticked */
+#yes:checked+label{
+    color: darkgreen;
+}
+
+/*
+Q) Order these rules according to their specificity, from least specific to most specific.:
+-h1
+-#mainContent
+-.main
+-div.main
+
+Ans)  #mainContent > div.main > .main > h1
+*/

@@ -1,0 +1,28 @@
+#Outer_Box{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+    
+    background-color: lightslategray;
+}
+
+.light{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 10px; 
+}
+
+#R{
+    background-color: red;
+    
+}
+
+#Y{
+    background-color: yellow;
+}
+
+#G{
+    background-color: green;
+}
