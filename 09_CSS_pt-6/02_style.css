@@ -1,0 +1,31 @@
+@keyframes size_animation {
+    from{
+        font-size: 20px;
+        transform: scaleX(1) skew(0deg);
+    }
+    to{
+        font-size: 40px;
+        transform: scaleX(1.5) ;
+    }
+}
+
+h1{
+    /* Size Animation */
+    /* animation-name: size_animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    /* Shorthand */
+    animation: size_animation 2s ease-in 0s infinite alternate;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

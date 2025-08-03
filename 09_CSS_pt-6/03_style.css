@@ -1,0 +1,45 @@
+@keyframes col_animation {
+    0%{
+        background-color: #8ACE00;
+        border-radius: 0%;
+        color: black;
+        border-color: black;
+    }
+    50%{
+        background-color: white;
+        border-radius: 25%;
+        color: black;
+        border-color: black;
+    }
+    100%{
+        background-color: black;
+        border-radius: 50%;
+        color: whitesmoke;
+        border-color: #8ACE00;
+    }
+}
+
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: #8ACE00;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 84px;
+    font-family: arial condensed;
+    animation: col_animation 2s linear 0s infinite alternate;
+}
+
+.text{
+    filter: blur(1.5px);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,58 @@
+h1{
+    background-color: #8ace00;
+    border: 2px solid black;
+    text-align: center;
+}
+
+div>p{
+    filter: blur(1.5px);
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial condensed;
+    font-size: 50px;
+}
+
+@media (max-width: 400px){
+    h1{
+        background-color: black;
+        color: white;
+    }
+    div{
+        background-color: #8ace00;
+        color: black;
+    }
+}
+
+@media (min-width: 700px){
+    h1{
+        background-color: black;
+        color: white;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px){
+    h1{
+        background-color: darkred;
+        color: black;
+    }
+    
+    div{
+        background-color: darkred;
+        color: black;
+    }
+
+}
+
+@media (orientation: landscape){
+    h1{
+        background-color: green;
+    }
+}

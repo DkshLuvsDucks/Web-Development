@@ -1,0 +1,26 @@
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+.box_1{
+    background-color: darkblue;
+    position: relative;
+    z-index: 1;
+}
+
+.box_2{
+    background-color: darkcyan;
+    position: relative;
+    bottom: 50px;
+    z-index: -1;
+}
+
+.box_3{
+    background-color: darkgoldenrod;
+    position: relative;
+    bottom: 150px;
+    left: 75px;
+    z-index: 0;
+}
