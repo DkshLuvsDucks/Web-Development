@@ -1,0 +1,12 @@
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: #9ace00;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.clicked{
+    background-color: #9ace00;
+}

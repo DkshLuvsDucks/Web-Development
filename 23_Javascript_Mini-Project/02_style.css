@@ -1,0 +1,11 @@
+.delete-btn{
+    border: none;
+    background-color: firebrick;
+    border-radius: 4px;
+    color: white;
+    margin-left: 12px;
+}
+
+li{
+    margin-bottom: 12px;
+}

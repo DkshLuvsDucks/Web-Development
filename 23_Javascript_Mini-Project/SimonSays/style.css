@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+}
+
+.btn{
+    height: 200px;
+    width: 200px;
+    border: solid black 10px;
+    border-radius: 20%;
+    margin: .75rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.red{
+    background-color: #bc4b51;
+}
+
+.yellow{
+    background-color: #f4e285;
+}
+
+.green{
+    background-color: #8cb369;
+}
+
+.blue{
+    background-color: #1a759f;
+}
+
+.flash{
+    background-color: white;
+}
+
+.user-flash{
+    background-color: #9ace00;
+}
+
+#high-score {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
