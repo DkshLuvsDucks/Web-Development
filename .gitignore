@@ -1,17 +1,60 @@
-# Ignore all executable files
-*.exe
+# ----------------------------------------------------
+# Node.js / Express / Web Development .gitignore
+# ----------------------------------------------------
 
-# Ignore object files and other build artifacts
-*.o
-*.obj
-*.out
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
 *.log
 *.tmp
 
-# Ignore build directories
+# Build directories
 /build/
 /bin/
 /dist/
+/coverage/
+/.parcel-cache/
+/.next/
+/out/
+/public/build/
+/tmp/
+/cache/
 
-# Ignore VS Code settings folder
+# Environment files (DO NOT COMMIT secrets)
+.env
+.env.local
+.env.*.local
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor settings
 .vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Dependency locks (optional — keep if you want reproducibility)
+# package-lock.json
+# yarn.lock
+
+# Compiled or generated files
+*.out
+*.obj
+*.o
+*.exe
+
+# Miscellaneous
+*.pid
+*.seed
+*.pid.lock
+
+# ----------------------------------------------------
+# End of file
+# ----------------------------------------------------
