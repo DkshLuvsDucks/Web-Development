@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Confirm Delete User</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+    <div class="delete-header">
+        <h2>Confirm Deletion</h2>
+        <p>
+            Are you sure you want to delete user:
+            <span class="highlight-username">
+                <%= user.username %>
+            </span>
+            (<span class="highlight-email">
+                <%= user.email %>
+            </span>)?
+        </p>
+    </div>
+
+    <% if (typeof error !=='undefined' ) { %>
+        <p class="error-message">
+            <%= error %>
+        </p>
+        <% } %>
+
+            <form method="POST" action="/user/<%= user.id %>?_method=DELETE" class="delete-form">
+                <label for="password">Enter your password to confirm:</label>
+                <input type="password" name="password" id="password" required />
+                <button type="submit" class="btn-delete" style="width: 100%; margin: auto; margin-bottom: 8px;">Delete
+                    User</button>
+            </form>
+
+            <a href="/">← Back to Home</a>
+
+</body>
+
+</html>

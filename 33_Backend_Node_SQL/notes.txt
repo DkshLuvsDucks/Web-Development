@@ -1,0 +1,15 @@
+npm i @faker-js/faker
+(to generate fake data)
+
+// using mysql2 package to prevent authentication errors
+npm i mysql2
+
+// to use mysql in terminal
+/usr/local/mysql/bin/mysql -u root -p
+& "C:\Program Files\MySQL\MySQL Server 9.2\bin\mysql.exe" -u root -p
+mysql -u root -p
+
+// use the command to run sql files from cli
+source schema.sql
+or source <file name>
+

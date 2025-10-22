@@ -1,0 +1,101 @@
+//shortcuts
+ctrl+l -> clears terminal
+
+Uses BSON format (Binary JSON)
+JSON is text based and parsing it is difficult
+this problem is cleared by using BSON format 
+BSON is space efficient
+
+MongoDB stores data in the form of documents & these documents are stored in collections
+
+// To open mongo shell
+mongosh 
+
+help
+show dbs 
+use <name> // create and use a new db (dbs are temporary until data is inserted)
+db // shows current db
+show collections
+db.<collection_name>.insertOne({java object data (key val pairs)})
+db.student.find()
+db.<collection_name>.insertMany([Array of Java Objs (key val pairs)])
+
+db.<collection_name>.find() // returns everything stored
+db.<collection_name>.find({key:value})
+db.<collection_name>.findOne({key:value})
+
+exit or quit to close mongo shell
+
+-----------------------------------------------------
+// OPERATORS
+Comparison
+$eq: Values are equal
+$ne: Values are not equal
+$gt: Value is greater than another value
+$gte: Value is greater than or equal to another value
+$lt: Value is less than another value
+$lte: Value is less than or equal to another value
+$in: Value is matched within an array
+
+Logical
+$and: Returns documents where both queries match
+$or: Returns documents where either query matches
+$nor: Returns documents where both queries fail to match
+$not: Returns documents where the query does not match
+
+Evaluation
+$regex: Allows the use of regular expressions when evaluating field values
+$text: Performs a text search
+$where: Uses a JavaScript expression to match documents
+
+----------------------------------------------------
+
+db.student.find({marks : {$gt:75}})
+db.student.find({city: {$in: ["Delhi", "Pune"]}})
+db.student.find( { $or : [ {marks: {$gt: 75}}, {city: "Delhi"} ] } )
+
+
+// UPDATE DATA 
+db.<collection_name>.updateOne(<filter>, <update>, <options>)
+db.<collection_name>.updateMany(<filter>, <update>, <options>)
+
+Example: db.student.updateOne({name: "Adam"}, {$set: {marks: 99}})
+db.student.updateMany({city: "Delhi"}, {$set: {city: "New Delhi"}})
+db.student.replaceOne({name: "Bob"}, {name: "Donald", marks: 24, age: 23, city: "Mumbai"})
+
+// NESTING
+college> db.student.insertOne({name: "Farah", performance: {marks: 88, grade: "A"}})
+{
+  acknowledged: true,
+  insertedId: ObjectId('68f22799c0de0ed1d2cebea4')
+}
+college> db.student.find({marks: 88})
+
+college> db.student.find({"performance.marks": 88})
+[
+  {
+    _id: ObjectId('68f22799c0de0ed1d2cebea4'),
+    name: 'Farah',
+    performance: { marks: 88, grade: 'A' }
+  }
+]
+
+
+
+// DELETE
+db.collection.deleteOne(filter, option)
+db.collection.deleteMany(filter, option)
+db.dropDatabase()
+
+
+Examples 
+db.student.deleteOne({name: "Adam"})
+db.student.deleteMany({marks: {$gt: 20}})
+db.student.deleteMany({}) // no condition applied, deletes All 
+
+----------------------------------------------------------------------
+# MONGOOSE
+sudo net start MongoDB
+net stop MongoDB
+
+npm i MONGOOSE

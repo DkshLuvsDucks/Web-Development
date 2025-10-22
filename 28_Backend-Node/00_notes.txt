@@ -1,0 +1,33 @@
+node (opens a cmdlet like console to run js commands)
+
+.exit (to close, or press ctrl+c)
+.save
+
+Use cmd "node <script name>" to execute them
+
+process: This object provides info about, and control over the current node.js process
+process.argv: returns an array containing the cmd line arguments passed when the node.js process was launched
+
+module.exports : a special object
+require() : used to import external modules that exist in seperate file
+
+npm = Node Package Manager
+
+npm install <pkg name> (local installation, only works in the folder it was installed in)
+npm i <pkg name> (this also works, i is an alias for install)
+
+npm install -g <pkg name> (global installation)
+u need to give permission to node_modules for this: sudo chown $USER /usr/local/lib/node_modules
+after this run: npm link <pkg name>
+
+node modules folder contains every installed dependency for the project
+package-lock.json stores the exact version of every installed dependency, it includes sub dependency and their versions as well
+package.json file contains descriptive and functional metadata about a project, such as name, version, dependencies
+
+package.json is very important, if u deleted node_modules folder by mistake u can just run "npm install" it will install all dependencies stated in package.json and will help in retrieving the node_modules folder again
+
+npm init
+
+import vs require
+import: selective loading support (saves memory), require: no selective loading support
+import: asynchronous, require: synchronous

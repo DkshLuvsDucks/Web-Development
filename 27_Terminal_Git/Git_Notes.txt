@@ -1,0 +1,48 @@
+git config --list
+
+git config --global user.name "name"
+git config --global user.email "email"
+
+git clone <link>
+
+git status
+
+// adds all files 
+git add . 
+git add <filename>
+
+git commit -m "msg"
+
+git push origin main
+
+git init
+git remote add origin <link>
+git remote -v (to verify remote)
+git branch
+git branch -M main (to rename branch to main)
+git push -u origin main (u dont need to write whole push origin main after this, git push is enough)
+git commit -am "msg" (adds and commits at once)
+
+git branch
+git checkout <branch-name> (to navigate to a branch)
+git checkout -b <new branch name>
+git branch -d <branch name> (delete a branch)
+
+git push --set-upstream origin <branch name>
+
+git diff <branch name>
+git merge <branch name>
+
+git pull origin main (fetches and downloads changes from local remote repo)
+
+git reset <filename>
+git reset (reset added changes)
+
+git reset HEAD~1 (reset commited changes)
+
+git reset <commit hash> (undo various commits)
+git reset --hard <commit hash>
+
+git log
+
+

@@ -1,0 +1,23 @@
+# Commands
+ls - list files
+pwd - print working directory
+clear - clears terminal screen
+cd <dir name/ path> - change directory (use "cd .." to navigate back)
+mkdir <name/path> - make directory
+man <command name> - manual for detailed overview of a command
+touch <filename> - creates a new file if it doesnt exist else modifies access/modification time
+rm - remove file 
+rmdir - remove directory (only if it is empty)
+rm -rf - remove recursively
+
+----------------------------------
+# Random
+/ - root directory
+~ - home directory
+press tab to autocomplete file names
+up/down keys for prev Commands
+
+#Flags
+ls -a 
+ls -l 
+ls -la

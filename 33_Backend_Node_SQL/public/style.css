@@ -1,0 +1,232 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* User Count (Home Page) */
+.user-count {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2196F3;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.user-count span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Table Styles */
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+caption {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+th, td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+thead {
+  background-color: #2196F3;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Form Inside Table (Remove default form styling) */
+table form {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  text-align: initial;
+  display: inline;
+}
+
+/* Edit/Add Form Styling */
+form.edit-form {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+form.edit-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+form.edit-form input[type="text"],
+form.edit-form input[type="password"],
+form.edit-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form.edit-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Button Base Styles */
+button,
+.btn,
+.btn-link {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 18px;
+  margin: 10px 6px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.btn:hover,
+.btn-link:hover {
+  background-color: #1976D2;
+}
+
+/* Link Styled as Button */
+a.btn-link {
+  text-decoration: none;
+  color: white;
+}
+
+a.btn-link:hover {
+  text-decoration: none;
+}
+
+/* Back Links */
+a {
+  color: #2196F3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Delete Button (Red) */
+.btn-delete {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 18px;
+  margin: 10px 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #c62828;
+}
+
+/* Delete Page Layout */
+.delete-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.delete-header h2 {
+  font-size: 2rem;
+  color: #e53935;
+  margin-bottom: 10px;
+}
+
+.delete-header p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.delete-form {
+  max-width: 400px;
+  margin: 20px auto 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.delete-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.delete-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Error Message */
+.error-message {
+  color: #e53935;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Utility */
+.highlight-username {
+  font-weight: bold;
+  color: #333;
+}
+
+.highlight-email {
+  color: #555;
+  font-style: italic;
+}

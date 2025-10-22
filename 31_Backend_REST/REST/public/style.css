@@ -1,0 +1,31 @@
+h1{
+    color: maroon;
+}
+
+.post{
+    background-color: blanchedalmond;
+}
+
+.user{
+    font-style: italic;
+}
+
+#form{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form button{
+    background-color: maroon;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.form-actions{
+    display: flex;
+    gap: 10px;
+}

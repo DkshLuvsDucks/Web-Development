@@ -1,0 +1,12 @@
+EJS = Embedded JavaScript Template
+
+npm init-y
+npm i express
+npm i ejs 
+
+interpolation syntax
+
+serving static files
+
+include
+
