@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Chats</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>All Chats</h1>
+            <a href="/chats/new" class="new-chat-btn">+ New Chat</a>
+        </header>
+
+        <section class="chat-list">
+            <% for(let chat of chats) { %>
+                <div class="chat">
+                    <div class="chat-header">
+                        <span><strong><%= chat.from %></strong> → <%= chat.to %></span>
+                        <div class="chat-actions">
+                            <form method="GET" action="/chats/<%=chat._id%>/edit" class="inline-form">
+                                <button class="small-btn edit">Edit</button>
+                            </form>
+                            <form method="POST" action="/chats/<%= chat._id %>?_method=DELETE" class="delete-form inline-form">
+                                <button type="submit" class="small-btn delete">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="msg">
+                        <p><%= chat.msg %></p>
+                    </div>
+
+                    <p class="timestamp"><%= chat.created_at.toLocaleString() %></p>
+                </div>
+            <% } %>
+        </section>
+    </div>
+    <script src="/confirm.js"></script>
+</body>
+</html>

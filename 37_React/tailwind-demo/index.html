@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="text-6xl italic font-semibold">This is H1</h1>
+    <h2 class="text-4xl font-medium">This is H2</h2>
+    <h3 class="text-2xl font-thin">This is H3</h3>
+    
+    <p class="font-sans tracking-tight text-left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nam. Omnis corporis nesciunt deleniti illo earum facilis suscipit tempore, debitis quam labore molestiae impedit obcaecati repellendus voluptas! Dolorum, voluptates quos.
+    </p>
+    <p class="font-serif tracking-tighter text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nam. Omnis corporis nesciunt deleniti illo earum facilis suscipit tempore, debitis quam labore molestiae impedit obcaecati repellendus voluptas! Dolorum, voluptates quos.
+    </p>
+    <p class="font-mono tracking-wide text-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nam. Omnis corporis nesciunt deleniti illo earum facilis suscipit tempore, debitis quam labore molestiae impedit obcaecati repellendus voluptas! Dolorum, voluptates quos.
+    </p>
+
+    <div class="bg-pink-100 w-1/2 h-36 text-green-700 mx-4 px-8 py-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In animi sapiente incidunt cupiditate culpa vitae, quo error. Adipisci minima eum laboriosam, voluptatem facilis illum odit, corrupti minus voluptatibus ut praesentium.
+    </div>
+
+    <div class="space-y-4 mt-4">
+        <!-- use [] for custom units -->
+        <div class="h-[200px] bg-purple-700 text-white border-2 border-black rounded-2xl sm:w-32 md:w-48 ">one</div>
+        <div class="bg-purple-700 text-white border-2 border-black rounded">two</div>
+        <div class="bg-purple-700 text-white">three</div>
+    </div>
+    
+    <!-- Apply directive to prevent repitition -->
+    <div class="flex justify-between mt-4">
+        <div class="box">one</div>
+        <div class="box">two</div>
+        <div class="box">three</div>
+    </div>
+    
+    <!-- Activity -->
+     <div class="mt-20 mx-52 my-24 flex flex-wrap rounded-xl border-2 border-slate-200 shadow-lg shadow-slate-200/50 overflow-hidden">
+        <!-- Quote Container -->
+        <div class=" w-full  bg-linear-to-r from-sky-500 to-indigo-500 text-white h-20 flex justify-center items-center font-bold text-xl">
+            News you can Trust.
+        </div>
+        <!-- Content Container -->
+        <div class="w-full text-center mt-6">
+            <h3 class="text-lg font-semibold">Stay up to date with the Latest!</h3>
+            <p>Subscribe to our newsletter for the latest news straight into your inbox</p>
+            <form class="flex flex-wrap">
+                <input placeholder="your@email.com" class="w-full mx-64 bg-slate-200 text-center placeholder:text-sm my-4 py-2 rounded"/>
+                <button class="w-full bg-blue-400 text-white mx-64 py-2 rounded-full">Subscribe Now</button>
+            </form>
+            <p class="mx-6 my-6 text-sm">We value your privacy</p>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* ---------- GLOBAL ---------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 30px;
+    margin: 0;
+}
+
+.container {
+    max-width: 650px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 32px 36px;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+h1, h2, h3 {
+    color: #075e54;
+    margin: 0 0 16px 0;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- BUTTONS ---------- */
+.new-chat-btn {
+    background-color: #25d366;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.new-chat-btn:hover {
+    background-color: #1da851;
+}
+
+.small-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.small-btn.edit {
+    background-color: #25d366;
+    color: white;
+}
+.small-btn.edit:hover {
+    background-color: #1da851;
+}
+
+.small-btn.delete {
+    background-color: #ff5252;
+    color: white;
+    margin-left: 8px;
+}
+.small-btn.delete:hover {
+    background-color: #e04040;
+}
+
+.chat-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* ---------- CHAT BOX ---------- */
+.chat {
+    margin-bottom: 24px;
+    padding: 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.2s ease;
+}
+.chat:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.msg {
+    background-color: #dcf8c6;
+    padding: 12px 16px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 85%;
+    word-wrap: break-word;
+    margin: 8px 0;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #999;
+    margin-top: 6px;
+}
+
+/* ---------- NEW / EDIT FORM ---------- */
+.new-chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.new-chat-form label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.new-chat-form input,
+.new-chat-form textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+.new-chat-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.new-chat-form button,
+.edit-btn {
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.new-chat-form button:hover,
+.edit-btn:hover {
+    background-color: #0e7565;
+}
+
+.back-btn {
+    background-color: #ddd;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.back-btn:hover {
+    background-color: #ccc;
+}
+
+/* ---------- CONFIRMATION MODAL ---------- */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+.overlay.show {
+    opacity: 1;
+}
+
+.confirm-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    padding: 28px 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 340px;
+    width: 90%;
+    z-index: 11;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+.confirm-box.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.confirm-box h3 {
+    color: #d32f2f;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.confirm-box p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.confirm-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.confirm-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+.confirm-btn:hover {
+    background-color: #c9302c;
+}
+
+.cancel-btn {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s ease;
+}
+.cancel-btn:hover {
+    background-color: #ccc;
+}
